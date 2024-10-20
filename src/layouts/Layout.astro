@@ -1,9 +1,8 @@
 ---
-interface Props {
-	title: string;
-}
+import Header from '../components/Header.astro';
 
-const { title } = Astro.props;
+
+
 ---
 
 <!doctype html>
@@ -12,33 +11,14 @@ const { title } = Astro.props;
 		<meta charset="UTF-8" />
 		<meta name="description" content="Astro description" />
 		<meta name="viewport" content="width=device-width" />
-		<link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+		<link rel="icon" type="image/jpeg+xml" href="/Logo.jpeg" />
 		<meta name="generator" content={Astro.generator} />
-		<title>{title}</title>
-		<header class=" h-16 flex justify-between shadow shadow-black">
-			<div class="ml-40 mt-5">
-				Logo
-			</div>
-			<menu class="flex mt-5">
-				<li class="">
-					<a href="/">Inicio</a>
-				</li>
-				<li class="ml-20">
-					<a href="/sobre-nosotros">Sobre nosotros</a>
-				</li>
-				<li class="ml-20">
-					<a href="/contactanos">Contáctanos</a>
-				</li>
-			</menu>
-			<div class="mt-5 mr-40">
-				<button class="border border-black rounded-full py-1 px-5">Login</button>
-				<button class="bg-slate-400 rounded-full py-1 px-4">Sing up</button>
-			</div>
-		 </header>
+		<title>Aula Global</title>
+		<Header></Header>
 	</head>
 	<body>
 		 
-		 <div class="bg-slate-500 p-7 justify-center flex">
+		 <div class="bg-slate-500 p-10 justify-center flex bg-no-repeat bg-cover h-[600px]" style="background-image: url(https://global.unitednations.entermediadb.net/assets/mediadb/services/module/asset/downloads/preset/Libraries/Production+Library/03-08-2020-UNICEF-Guatemala.jpg/image1170x530cropped.jpg);">
 			<div class="bg-orange-300 p-10 ">
 				<h1 class="text-[20px]">Lorem ipsum dolor sit amet consectetur <br> adipisicing elit Lorem ipsum dolor</h1>
 				<p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. <br> Sint ex reprehenderit soluta quisquam
