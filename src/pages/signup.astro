@@ -1,105 +1,96 @@
----
-
----
 <!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8" />
-		<meta name="description" content="Astro description" />
-		<meta name="viewport" content="width=device-width" />
-		<link rel="icon" type="image/jpeg+xml" href="/Logo.jpeg" />
-		<meta name="generator" content={Astro.generator} />
-		<title>Sign Up</title>
+    <meta name="description" content="Astro description" />
+    <meta name="viewport" content="width=device-width" />
+    <link rel="icon" type="image/jpeg+xml" href="/Logo.jpeg" />
+    <title>Sign Up</title>
+
+    <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
 </head>
-<body class="bg-[#EFE8C1]">
-    <!-- Encabezado del sitio -->
-    <header class="bg-[#4F774D] text-white p-4 text-center font-bold">
-      <h1>Bienvenido a la Plataforma</h1>
-    </header>
+<body class="bg-cover bg-center min-h-screen" style="background-image: url('https://pymstatic.com/51975/conversions/frases-atardecer-wide.jpg');">
 
-    <!-- Contenido principal -->
-    <main class="flex items-center justify-center min-h-screen">
-      <div class="bg-white p-8 rounded-lg shadow-md w-full max-w-md">
-        <h1 class="text-2xl font-bold text-[#4F774D] mb-6 text-center">Formulario de Registro</h1>
-  
-  <form action="#" method="POST" class="space-y-4">
-          
-    <!-- Nombres -->
-    <div>
-      <label for="nombres" class="block text-sm font-medium text-[#A16436]">Nombres</label>
-      <input type="text" id="nombres" name="nombres" required class="mt-1 block w-full px-3 py-2 border border-[#D9D9D9] rounded-md shadow-sm focus:outline-none focus:ring-[#4F774D] focus:border-[#4F774D]"/>
-    </div>
+  <div class="flex items-center justify-center min-h-screen bg-black bg-opacity-60">
     
-    <!-- Apellidos -->
-    <div>
-      <label for="apellidos" class="block text-sm font-medium text-[#A16436]">Apellidos</label>
-      <input type="text" id="apellidos" name="apellidos" required class="mt-1 block w-full px-3 py-2 border border-[#D9D9D9] rounded-md shadow-sm focus:outline-none focus:ring-[#4F774D] focus:border-[#4F774D]"/>
-    </div>
-    
-    <!-- Correo -->
-    <div>
-      <label for="correo" class="block text-sm font-medium text-[#A16436]">Correo</label>
-      <input type="email" id="correo" name="correo" required class="mt-1 block w-full px-3 py-2 border border-[#D9D9D9] rounded-md shadow-sm focus:outline-none focus:ring-[#4F774D] focus:border-[#4F774D]"/>
-    </div>
-    
-    <!-- Edad -->
-    <div>
-      <label for="edad" class="block text-sm font-medium text-[#A16436]">Edad</label>
-      <input type="number" id="edad" name="edad" required class="mt-1 block w-full px-3 py-2 border border-[#D9D9D9] rounded-md shadow-sm focus:outline-none focus:ring-[#4F774D] focus:border-[#4F774D]"/>
-    </div>
-    
-    <!-- Tipo de Documento -->
-    <div>
-      <label for="tipo_documento" class="block text-sm font-medium text-[#A16436]">Tipo de Documento</label>
-      <select id="tipo_documento" name="tipo_documento" required class="mt-1 block w-full px-3 py-2 border border-[#D9D9D9] bg-white rounded-md shadow-sm focus:outline-none focus:ring-[#4F774D] focus:border-[#4F774D]">
-        <option value="cc">Cédula de Ciudadanía</option>
-        <option value="ti">Tarjeta de Identidad</option>
-        <option value="ce">Cédula de Extranjería</option>
-      </select>
-    </div>
-    
-    <!-- Documento -->
-    <div>
-      <label for="documento" class="block text-sm font-medium text-[#A16436]">Número de Documento</label>
-      <input type="text" id="documento" name="documento" required class="mt-1 block w-full px-3 py-2 border border-[#D9D9D9] rounded-md shadow-sm focus:outline-none focus:ring-[#4F774D] focus:border-[#4F774D]"/>
-    </div>
-    
-    <!-- Rol -->
-    <div>
-      <label for="rol" class="block text-sm font-medium text-[#A16436]">Soy</label>
-      <select id="rol" name="rol" required class="mt-1 block w-full px-3 py-2 border border-[#D9D9D9] bg-white rounded-md shadow-sm focus:outline-none focus:ring-[#4F774D] focus:border-[#4F774D]">
-        <option value="estudiante">Estudiante</option>
-        <option value="profesor">Profesor</option>
-        <option value="administrativo">Administrativo</option>
-      </select>
-    </div>
-    
-    <!-- Contraseña -->
-    <div>
-      <label for="password" class="block text-sm font-medium text-[#A16436]">Crear Contraseña</label>
-      <input type="password" id="password" name="password" required class="mt-1 block w-full px-3 py-2 border border-[#D9D9D9] rounded-md shadow-sm focus:outline-none focus:ring-[#4F774D] focus:border-[#4F774D]"/>
-    </div>
-    
-    <!-- Botón de Registro -->
-    <div class="flex justify-center">
-      <button type="submit" class="px-4 py-2 bg-[#F4A261] text-white font-semibold rounded-md shadow-md hover:bg-[#E08648] focus:outline-none focus:ring-2 focus:ring-[#4F774D] focus:ring-opacity-50">
-        Registrarse
-      </button>
-    </div>
-  </form>
-
-  <!-- Enlace al inicio de sesión -->
-  <div class="mt-4 text-center">
-    <p class="text-sm">¿Ya tienes una cuenta? 
-      <a href="/login" class="text-[#8AB6D6] hover:text-[#4F774D]">Inicia Sesión</a>
-    </p>
-  </div> 
+    <div class="max-w-6xl w-full grid grid-cols-1 md:grid-cols-2 gap-8 bg-opacity-0">
+      
+      <!-- Primera Sección del Formulario -->
+      <div class="backdrop-blur-3xl p-8 md:p-12 rounded-lg shadow-lg flex flex-col items-center">
+        <div class="mt-[13px]">
+          <img src="/public/Logo.jpeg" alt="Logo" class="w-10 h-10 rounded-full">
+        </div>
+        <h2 class="text-[#4F774D] text-3xl font-bold mb-4">Registrarse</h2>
+        
+        <form class="w-full space-y-4">
+            <div>
+                <label class="block text-[#4F774D] font-semibold mb-1" for="nombres">Nombres</label>
+                <input type="text" id="nombres" required class="w-full p-3 rounded-lg border border-[#D9D9D9] focus:outline-none focus:border-[#8AB6D6]" placeholder="Nombres">
+            </div>
+            <div>
+                <label class="block text-[#4F774D] font-semibold mb-1" for="apellidos">Apellidos</label>
+                <input type="text" id="apellidos" required class="w-full p-3 rounded-lg border border-[#D9D9D9] focus:outline-none focus:border-[#8AB6D6]" placeholder="Apellidos">
+            </div>
+            <div>
+                <label class="block text-[#4F774D] font-semibold mb-1" for="fecha-nacimiento">Fecha de nacimiento</label>
+                <input type="date" id="fecha-nacimiento" required class="w-full p-3 rounded-lg border border-[#D9D9D9] focus:outline-none focus:border-[#8AB6D6]">
+            </div>
+            <div>
+                <label class="block text-[#4F774D] font-semibold mb-1" for="tipo-documento">Tipo de documento</label>
+                <select id="tipo-documento" required class="w-full p-3 rounded-lg border border-[#D9D9D9] focus:outline-none focus:border-[#8AB6D6]">
+                    <option value="">Seleccione</option>
+                    <option value="CC">Cédula de Ciudadanía</option>
+                    <option value="TI">Tarjeta de Identidad</option>
+                    <option value="CE">Cédula de Extranjería</option>
+                    <option value="PAS">Pasaporte</option>
+                </select>
+            </div>
+            <div>
+                <label class="block text-[#4F774D] font-semibold mb-1" for="documento">Documento</label>
+                <input type="text" id="documento" required class="w-full p-3 rounded-lg border border-[#D9D9D9] focus:outline-none focus:border-[#8AB6D6]" placeholder="Documento">
+            </div>
+        </form>
       </div>
-    </main>
 
-    <!-- Pie de página -->
-    <footer class="text-center p-4 bg-[#4F774D] text-white">
-      <p>&copy; 2024 Tu Plataforma</p>
-    </footer>
-  </body>
+      <!-- Segunda Sección del Formulario -->
+      <div class="backdrop-blur-3xl p-8 md:p-12 rounded-lg shadow-lg flex flex-col items-center">
+        <div class="mt-[13px]">
+          <img src="/public/Logo.jpeg" alt="Logo" class="w-10 h-10 rounded-full">
+        </div>
+        <h2 class="text-[#4F774D] text-3xl font-bold mb-4">Registrarse</h2>
+        
+        <form class="w-full space-y-4">
+            <div>
+                <label class="block text-[#4F774D] font-semibold mb-1" for="rol">Rol</label>
+                <select id="rol" required class="w-full p-3 rounded-lg border border-[#D9D9D9] focus:outline-none focus:border-[#8AB6D6]">
+                    <option value="">Seleccione</option>
+                    <option value="estudiante">Estudiante</option>
+                    <option value="profesor">Profesor</option>
+                    <option value="administrador">Administrador</option>
+                </select>
+            </div>
+            <div>
+                <label class="block text-[#4F774D] font-semibold mb-1" for="correo">Correo</label>
+                <input type="email" id="correo" required class="w-full p-3 rounded-lg border border-[#D9D9D9] focus:outline-none focus:border-[#8AB6D6]" placeholder="Correo">
+            </div>
+            <div>
+                <label class="block text-[#4F774D] font-semibold mb-1" for="password">Contraseña</label>
+                <input type="password" id="password" required class="w-full p-3 rounded-lg border border-[#D9D9D9] focus:outline-none focus:border-[#8AB6D6]" placeholder="Contraseña">
+            </div>
+            <div>
+                <label class="block text-[#4F774D] font-semibold mb-1" for="confirm-password">Confirmar contraseña</label>
+                <input type="password" id="confirm-password" required class="w-full p-3 rounded-lg border border-[#D9D9D9] focus:outline-none focus:border-[#8AB6D6]" placeholder="Confirmar contraseña">
+            </div>
+            
+            <button class="w-full py-3 rounded-lg bg-[#F4A261] text-white font-semibold hover:bg-[#A16436] transition duration-200">
+              <a href="/login">Registrarse</a>
+            </button>
+            <p class="text-[#4F774D] text-xs mt-2 text-center mt-6">¿Ya tienes una cuenta? <br><a href="/login" class="underline">Iniciar sesión</a></p>
+        </form>
+      </div>
+
+    </div>
+  </div>
+
+</body>
 </html>
