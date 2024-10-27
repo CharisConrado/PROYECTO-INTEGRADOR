@@ -1,49 +1,28 @@
 ---
 
 ---
-<header class="h-16 flex items-center justify-between shadow shadow-black bg-[#EFE8C1] px-4 md:px-20">
-    <div class="flex items-center">
-      <img src="/public/Logo.jpeg" alt="Logo" class="w-8 h-8 md:w-10 md:h-10 rounded-full" />
+<header class=" h-16 flex justify-between shadow shadow-black bg-[#EFE8C1]">
+    <div class="ml-40 mt-[13px]">
+       <img src="/public/Logo.jpeg" alt="" class="w-10 h-10 rounded-full">
     </div>
-    
-    <menu class="hidden md:flex items-center space-x-10">
-      <li><a href="/" class="text-sm md:text-base">Inicio</a></li>
-      <li><a href="/sobrenosotros" class="text-sm md:text-base">Sobre nosotros</a></li>
-      <li><a href="/contactanos" class="text-sm md:text-base">Contáctanos</a></li>
+    <menu class="flex mt-5">
+        <li class="">
+            <a href="/">Inicio</a>
+        </li>
+        <li class="ml-20">
+            <a href="/sobrenosotros">Sobre nosotros</a>
+        </li>
+        <li class="ml-20">
+            <a href="/contactanos">Contáctanos</a>
+        </li>
     </menu>
-    
-    <!-- Menú móvil -->
-    <div class="md:hidden flex items-center">
-      <button id="mobile-menu-button" class="focus:outline-none">
-        <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
-          <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"></path>
-        </svg>
-      </button>
+    <div class="mt-5 mr-40">
+        <button class="border border-[#A16436] rounded-full py-1 px-5 cursor-pointer hover:bg-[#a164361e]">
+            <a href="/login">Login</a>
+        </button>
+       
+        <button class="bg-[#A16436] rounded-full py-1 px-4 cursor-pointer hover:bg-[#885326]">
+            <a href="/signup">Sign Up</a>
+        </button>
     </div>
-  
-    <div class="flex items-center space-x-2">
-      <button class="border border-[#A16436] rounded-full py-1 px-3 md:px-5 text-xs md:text-sm hover:bg-[#a164361e]">
-        <a href="/login">Login</a>
-      </button>
-      <button class="bg-[#A16436] rounded-full py-1 px-3 md:px-4 text-xs md:text-sm hover:bg-[#885326]">
-        <a href="/signup">Sign Up</a>
-      </button>
-    </div>
-  </header>
-  
-  <!-- Menú móvil desplegable -->
-  <div id="mobile-menu" class="md:hidden hidden flex-col items-center space-y-4 bg-[#EFE8C1] py-4">
-    <a href="/" class="text-sm">Inicio</a>
-    <a href="/sobrenosotros" class="text-sm">Sobre nosotros</a>
-    <a href="/contactanos" class="text-sm">Contáctanos</a>
-  </div>
-  
-  <script>
-    const menuButton = document.getElementById("mobile-menu-button");
-    const mobileMenu = document.getElementById("mobile-menu");
-  
-    menuButton.addEventListener("click", () => {
-      mobileMenu.classList.toggle("hidden");
-    });
-  </script>
-  
+ </header>
