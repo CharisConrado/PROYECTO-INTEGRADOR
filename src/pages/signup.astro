@@ -4,93 +4,93 @@
     <meta charset="UTF-8" />
     <meta name="description" content="Astro description" />
     <meta name="viewport" content="width=device-width" />
-    <link rel="icon" type="image/jpeg+xml" href="/Logo.jpeg" />
+    <link
+			rel="icon"
+			href="/logo2.png"
+		/>
     <title>Sign Up</title>
 
     <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
 </head>
 <body class="bg-cover bg-center min-h-screen" style="background-image: url('https://pymstatic.com/51975/conversions/frases-atardecer-wide.jpg');">
 
+  
+
   <div class="flex items-center justify-center min-h-screen bg-black bg-opacity-60">
-    
-    <div class="max-w-6xl w-full grid grid-cols-1 md:grid-cols-2 gap-8 bg-opacity-0">
+    <div class="w-4/5 max-w-6xl backdrop-blur-3xl p-8 md:p-12 rounded-lg shadow-lg grid gap-8">
+  
       
+      <div class="flex flex-col items-center mb-8">
+        <img src="/public/Logo.jpeg" alt="Logo" class="w-16 h-16 rounded-full mb-4">
+        <h2 class="text-[#4F774D] text-3xl font-bold">Registrarse</h2>
+      </div>
+  
       
-      <div class="backdrop-blur-3xl p-8 md:p-12 rounded-lg shadow-lg flex flex-col items-center">
-        <div class="mt-[13px]">
-          <img src="/public/Logo.jpeg" alt="Logo" class="w-10 h-10 rounded-full">
-        </div>
-        <h2 class="text-[#4F774D] text-3xl font-bold mb-4">Registrarse</h2>
+      <form class="grid grid-cols-1 md:grid-cols-2 gap-8 w-full">
+  
         
-        <form class="w-full space-y-4">
-            <div>
-                <label class="block text-[#4F774D] font-semibold mb-1" for="nombres">Nombres</label>
-                <input type="text" id="nombres" required class="w-full p-3 rounded-lg border border-[#D9D9D9] focus:outline-none focus:border-[#8AB6D6]" placeholder="Nombres">
-            </div>
-            <div>
-                <label class="block text-[#4F774D] font-semibold mb-1" for="apellidos">Apellidos</label>
-                <input type="text" id="apellidos" required class="w-full p-3 rounded-lg border border-[#D9D9D9] focus:outline-none focus:border-[#8AB6D6]" placeholder="Apellidos">
-            </div>
-            <div>
-                <label class="block text-[#4F774D] font-semibold mb-1" for="fecha-nacimiento">Fecha de nacimiento</label>
-                <input type="date" id="fecha-nacimiento" required class="w-full p-3 rounded-lg border border-[#D9D9D9] focus:outline-none focus:border-[#8AB6D6]">
-            </div>
-            <div>
-                <label class="block text-[#4F774D] font-semibold mb-1" for="tipo-documento">Tipo de documento</label>
-                <select id="tipo-documento" required class="w-full p-3 rounded-lg border border-[#D9D9D9] focus:outline-none focus:border-[#8AB6D6]">
-                    <option value="">Seleccione</option>
-                    <option value="CC">Cédula de Ciudadanía</option>
-                    <option value="TI">Tarjeta de Identidad</option>
-                    <option value="CE">Cédula de Extranjería</option>
-                    <option value="PAS">Pasaporte</option>
-                </select>
-            </div>
-            <div>
-                <label class="block text-[#4F774D] font-semibold mb-1" for="documento">Documento</label>
-                <input type="text" id="documento" required class="w-full p-3 rounded-lg border border-[#D9D9D9] focus:outline-none focus:border-[#8AB6D6]" placeholder="Documento">
-            </div>
-        </form>
+        <div>
+          <label class="block text-[#4F774D] font-semibold mb-1" for="nombres">Nombres</label>
+          <input type="text" id="nombres"  class="w-full p-3 rounded-lg border border-[#D9D9D9] focus:outline-none focus:border-[#8AB6D6]" placeholder="Nombres"required>
       </div>
-
-    
-      <div class="backdrop-blur-3xl p-8 md:p-12 rounded-lg shadow-lg flex flex-col items-center">
-        <div class="mt-[13px]">
-          <img src="/public/Logo.jpeg" alt="Logo" class="w-10 h-10 rounded-full">
-        </div>
-        <h2 class="text-[#4F774D] text-3xl font-bold mb-4">Registrarse</h2>
+      <div>
+          <label class="block text-[#4F774D] font-semibold mb-1" for="apellidos">Apellidos</label>
+          <input type="text" id="apellidos" required class="w-full p-3 rounded-lg border border-[#D9D9D9] focus:outline-none focus:border-[#8AB6D6]" placeholder="Apellidos">
+      </div>
+      <div>
+          <label class="block text-[#4F774D] font-semibold mb-1" for="fecha-nacimiento">Fecha de nacimiento</label>
+          <input type="date" id="fecha-nacimiento" required class="w-full p-3 rounded-lg border border-[#D9D9D9] focus:outline-none focus:border-[#8AB6D6]">
+      </div>
+      <div>
+          <label class="block text-[#4F774D] font-semibold mb-1" for="tipo-documento">Tipo de documento</label>
+          <select id="tipo-documento" required class="w-full p-3 rounded-lg border border-[#D9D9D9] focus:outline-none focus:border-[#8AB6D6]">
+              <option value="">Seleccione</option>
+              <option value="CC">Cédula de Ciudadanía</option>
+              <option value="TI">Tarjeta de Identidad</option>
+              <option value="CE">Cédula de Extranjería</option>
+              <option value="PAS">Pasaporte</option>
+          </select>
+      </div>
+      <div>
+          <label class="block text-[#4F774D] font-semibold mb-1" for="documento">Documento</label>
+          <input type="text" id="documento" required class="w-full p-3 rounded-lg border border-[#D9D9D9] focus:outline-none focus:border-[#8AB6D6]" placeholder="Documento">
+      </div>
+  
         
-        <form class="w-full space-y-4">
-            <div>
-                <label class="block text-[#4F774D] font-semibold mb-1" for="rol">Rol</label>
-                <select id="rol" required class="w-full p-3 rounded-lg border border-[#D9D9D9] focus:outline-none focus:border-[#8AB6D6]">
-                    <option value="">Seleccione</option>
-                    <option value="estudiante">Estudiante</option>
-                    <option value="profesor">Profesor</option>
-                    <option value="administrador">Administrador</option>
-                </select>
-            </div>
-            <div>
-                <label class="block text-[#4F774D] font-semibold mb-1" for="correo">Correo</label>
-                <input type="email" id="correo" required class="w-full p-3 rounded-lg border border-[#D9D9D9] focus:outline-none focus:border-[#8AB6D6]" placeholder="Correo">
-            </div>
-            <div>
-                <label class="block text-[#4F774D] font-semibold mb-1" for="password">Contraseña</label>
-                <input type="password" id="password" required class="w-full p-3 rounded-lg border border-[#D9D9D9] focus:outline-none focus:border-[#8AB6D6]" placeholder="Contraseña">
-            </div>
-            <div>
-                <label class="block text-[#4F774D] font-semibold mb-1" for="confirm-password">Confirmar contraseña</label>
-                <input type="password" id="confirm-password" required class="w-full p-3 rounded-lg border border-[#D9D9D9] focus:outline-none focus:border-[#8AB6D6]" placeholder="Confirmar contraseña">
-            </div>
-            
-            <button class="w-full py-3 rounded-lg bg-[#F4A261] text-white font-semibold hover:bg-[#A16436] transition duration-200">
-              <a href="/login">Registrarse</a>
-            </button>
-            <p class="text-[#4F774D] text-xs mt-2 text-center">¿Ya tienes una cuenta? <br><a href="/login" class="underline">Iniciar sesión</a></p>
-        </form>
+        <div>
+          <label class="block text-[#4F774D] font-semibold mb-1" for="rol">Rol</label>
+          <select id="rol" required class="w-full p-3 rounded-lg border border-[#D9D9D9] focus:outline-none focus:border-[#8AB6D6]">
+              <option value="">Seleccione</option>
+              <option value="estudiante">Estudiante</option>
+              <option value="profesor">Profesor</option>
+              <option value="administrador">Administrador</option>
+          </select>
       </div>
-
+      <div>
+          <label class="block text-[#4F774D] font-semibold mb-1" for="correo">Correo</label>
+          <input type="email" id="correo" required class="w-full p-3 rounded-lg border border-[#D9D9D9] focus:outline-none focus:border-[#8AB6D6]" placeholder="Correo">
+      </div>
+      <div>
+          <label class="block text-[#4F774D] font-semibold mb-1" for="password">Contraseña</label>
+          <input type="password" id="password" required class="w-full p-3 rounded-lg border border-[#D9D9D9] focus:outline-none focus:border-[#8AB6D6]" placeholder="Contraseña">
+      </div>
+      <div>
+          <label class="block text-[#4F774D] font-semibold mb-1" for="confirm-password">Confirmar contraseña</label>
+          <input type="password" id="confirm-password" required class="w-full p-3 rounded-lg border border-[#D9D9D9] focus:outline-none focus:border-[#8AB6D6]" placeholder="Confirmar contraseña">
+      </div>
+      
+      <div>
+        <button class="w-full h-[50px] py-3 rounded-lg bg-[#F4A261] text-white font-semibold hover:bg-[#A16436] transition duration-200">
+          <a href="/login">Registrarse</a>
+        </button>
+        <p class="text-[#4F774D] text-xs mt-2 text-center">¿Ya tienes una cuenta? <a href="/login" class="underline">Iniciar sesión</a></p>
+      </div>
+        
+      </form>
+      
     </div>
   </div>
+  
 
 </body>
 </html>
