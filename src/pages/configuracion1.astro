@@ -1,0 +1,135 @@
+---
+import Aside from "../components/Aside.astro"
+import Barranotas from "../components/Barranotas.astro"
+---
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+		<meta charset="UTF-8" />
+		<meta name="description" content="Astro description" />
+		<meta name="viewport" content="width=device-width" />
+		<link
+			rel="icon"
+			href="/logo2.png"
+		/>
+		<meta name="generator" content={Astro.generator} />
+		<title>Aula Global</title>
+        
+
+           
+	</head>
+    <body class="bg-gray-100 text-gray-900 font-sans">
+
+        
+        <Aside></Aside>
+    
+       
+         
+        <main class="ml-64 p-8">
+           
+            <div class="bg-gray-100 p-8 rounded-lg shadow-lg max-w-lg mx-auto mt-8">
+                <!-- Título de Configuración -->
+                <h1 class="text-3xl font-bold text-center mb-8 text-gray-800">Configuración</h1>
+
+                <div class="text-center mb-8">
+                    <label for="fotoPerfil" class="block text-gray-700 font-medium mb-2">Foto de Perfil</label>
+                    <div class="flex justify-center items-center mb-4">
+                        <img 
+                            src="/img/avatar/2.png" 
+                            alt="Foto de perfil" 
+                            class="w-24 h-24 rounded-full object-cover border border-gray-300"
+                        />
+                    </div>
+                    <input 
+                        type="file" 
+                        id="fotoPerfil" 
+                        class="hidden" 
+                        accept="image/*"
+                    />
+                    <button 
+                        onclick="document.getElementById('fotoPerfil').click();" 
+                        class="bg-[#94C77E] hover:bg-[#6e9d59] text-white font-semibold py-2 px-4 rounded-full"
+                    >
+                        Cambiar Foto
+                    </button>
+                </div>
+
+                
+            
+                <!-- Cambiar Nombre -->
+                <div class="mb-6">
+                    <label for="nombre" class="block text-gray-700 font-medium mb-2">Cambiar Nombre</label>
+                    <input 
+                        type="text" 
+                        id="nombre" 
+                        placeholder="Ingrese su nuevo nombre" 
+                        class="w-full p-3 border border-gray-300 rounded-lg focus:outline-none focus:ring"
+                    />
+                </div>
+            
+                <!-- Cambiar Contraseña -->
+                
+            
+                <!-- Botón deslizante para Notificaciones -->
+                <div class="flex items-center justify-between mb-6">
+                    <label for="notificaciones" class="text-gray-700 font-medium">Notificaciones</label>
+                    <label class="relative inline-flex items-center cursor-pointer">
+                        <input type="checkbox" id="notificaciones" class="sr-only peer">
+                        <div class="w-11 h-6 bg-gray-200   rounded-full peer dark:bg-gray-700 peer-checked:after:translate-x-full peer-checked:after:border-white after:content-[''] after:absolute after:top-0.5 after:left-[2px] after:bg-white after:border-gray-300 after:border after:rounded-full after:h-5 after:w-5 after:transition-all peer-checked:bg-[#94C77E]"></div>
+                    </label>
+                </div>
+            
+                <!-- Botón deslizante para Modo Oscuro -->
+                <div class="flex items-center justify-between mb-6">
+                    <label for="modoOscuro" class="text-gray-700 font-medium">Modo Oscuro</label>
+                    <label class="relative inline-flex items-center cursor-pointer">
+                        <input type="checkbox" id="modoOscuro" class="sr-only peer">
+                        <div class="w-11 h-6 bg-gray-200   rounded-full peer dark:bg-gray-700 peer-checked:after:translate-x-full peer-checked:after:border-white after:content-[''] after:absolute after:top-0.5 after:left-[2px] after:bg-white after:border-gray-300 after:border after:rounded-full after:h-5 after:w-5 after:transition-all peer-checked:bg-[#94C77E]"></div>
+                    </label>
+                </div>
+            
+                <!-- Botón deslizante para Sonidos -->
+                <div class="flex items-center justify-between mb-6">
+                    <label for="sonidos" class="text-gray-700 font-medium">Sonidos</label>
+                    <label class="relative inline-flex items-center cursor-pointer">
+                        <input type="checkbox" id="sonidos" class="sr-only peer">
+                        <div class="w-11 h-6 bg-gray-200   rounded-full peer dark:bg-gray-700 peer-checked:after:translate-x-full peer-checked:after:border-white after:content-[''] after:absolute after:top-0.5 after:left-[2px] after:bg-white after:border-gray-300 after:border after:rounded-full after:h-5 after:w-5 after:transition-all peer-checked:bg-[#94C77E]"></div>
+                    </label>
+                </div>
+
+                <div class="flex items-center justify-between mb-6">
+                    <label for="sonidos" class="text-gray-700 font-medium">Sonidos</label>
+                    <label class="relative inline-flex items-center cursor-pointer">
+                        <input type="checkbox" id="sonidos" class="sr-only peer">
+                        <div class="w-11 h-6 bg-gray-200   rounded-full peer dark:bg-gray-700 peer-checked:after:translate-x-full peer-checked:after:border-white after:content-[''] after:absolute after:top-0.5 after:left-[2px] after:bg-white after:border-gray-300 after:border after:rounded-full after:h-5 after:w-5 after:transition-all peer-checked:bg-[#94C77E]"></div>
+                    </label>
+                </div>
+
+                <div class="flex items-center justify-between mb-6">
+                    <label for="sonidos" class="text-gray-700 font-medium">Sonidos</label>
+                    <label class="relative inline-flex items-center cursor-pointer">
+                        <input type="checkbox" id="sonidos" class="sr-only peer">
+                        <div class="w-11 h-6 bg-gray-200   rounded-full peer dark:bg-gray-700 peer-checked:after:translate-x-full peer-checked:after:border-white after:content-[''] after:absolute after:top-0.5 after:left-[2px] after:bg-white after:border-gray-300 after:border after:rounded-full after:h-5 after:w-5 after:transition-all peer-checked:bg-[#94C77E]"></div>
+                    </label>
+                </div>
+            
+                <!-- Botón de Guardar cambios -->
+                <div class="text-center">
+                    <button class="bg-[#94C77E] hover:bg-[#6e9d59] text-white font-bold py-2 px-4 rounded-full mt-4">
+                        Guardar Cambios
+                    </button>
+                </div>
+            </div>
+            
+
+			
+			
+        
+        </main>
+
+        
+    
+
+    </body>
+   
+</html>
