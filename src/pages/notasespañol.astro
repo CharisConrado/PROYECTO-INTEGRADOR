@@ -1,0 +1,97 @@
+---
+import Aside from "../components/Aside.astro"
+import Barranotas from "../components/Barranotas.astro"
+---
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+		<meta charset="UTF-8" />
+		<meta name="description" content="Astro description" />
+		<meta name="viewport" content="width=device-width" />
+		<link
+			rel="icon"
+			href="/logo2.png"
+		/>
+		<meta name="generator" content={Astro.generator} />
+		<title>Aula Global</title>
+        
+
+           
+	</head>
+    <body class="bg-gray-100 text-gray-900 font-sans">
+
+        
+        <Aside></Aside>
+    
+       
+         
+        <main class="ml-64 p-8">
+            <Barranotas></Barranotas>
+
+			<div class="bg-gray-100 p-8 rounded-lg shadow-lg max-w-4xl mx-auto mt-8">
+                <!-- Título de la materia -->
+                <h1 class="text-3xl font-bold text-center mb-8 text-gray-800">Lengua Castellana</h1>
+            
+                <!-- Primera sección separada -->
+                <div class="bg-white p-6 rounded-lg shadow-md mb-12">
+                    <h2 class="text-2xl font-semibold mb-4 text-gray-700">Primera Sección</h2>
+                    <div class="grid grid-cols-1 gap-4">
+                        <div class="bg-gray-50 p-4 rounded-lg shadow-sm">
+                            <p class="font-semibold text-gray-800">Entrega 1: Álgebra Básica</p>
+                            <p class="text-gray-600">Nota: 8.5</p>
+                        </div>
+                        <div class="bg-gray-50 p-4 rounded-lg shadow-sm">
+                            <p class="font-semibold text-gray-800">Entrega 2: Ecuaciones Lineales</p>
+                            <p class="text-gray-600">Nota: 9.0</p>
+                        </div>
+                        <div class="bg-gray-50 p-4 rounded-lg shadow-sm">
+                            <p class="font-semibold text-gray-800">Entrega 3: Sistemas de Ecuaciones</p>
+                            <p class="text-gray-600">Nota: 7.8</p>
+                        </div>
+                    </div>
+                </div>
+            
+                <!-- Segunda sección separada -->
+                <div class="bg-white p-6 rounded-lg shadow-md">
+                    <h2 class="text-2xl font-semibold mb-4 text-gray-700">Segunda Sección</h2>
+                    <div class="grid grid-cols-1 gap-4">
+                        <div class="bg-gray-50 p-4 rounded-lg shadow-sm">
+                            <p class="font-semibold text-gray-800">Entrega 1: Funciones y Gráficas</p>
+                            <p class="text-gray-600">Nota: 8.0</p>
+                        </div>
+                        <div class="bg-gray-50 p-4 rounded-lg shadow-sm">
+                            <p class="font-semibold text-gray-800">Entrega 2: Polinomios</p>
+                            <p class="text-gray-600">Nota: 9.2</p>
+                        </div>
+                        <div class="bg-gray-50 p-4 rounded-lg shadow-sm">
+                            <p class="font-semibold text-gray-800">Entrega 3: Derivadas</p>
+                            <p class="text-gray-600">Nota: 8.7</p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Segunda sección separada -->
+                <div class="bg-white p-6 rounded-lg shadow-md m-10">
+                    <h2 class="text-2xl font-semibold mb-4 text-gray-700">Definitiva</h2>
+                    <div class="grid grid-cols-1 gap-4">
+                        <div class="bg-gray-50 p-4 rounded-lg shadow-sm">
+                            <p class="font-semibold text-gray-800">Lengua Castellana</p>
+                            <p class="text-gray-600">Nota: 8.0</p>
+                        </div>
+                    </div>
+                </div>
+
+                
+            </div>
+            
+            
+			
+        
+        </main>
+
+        
+    
+
+    </body>
+   
+</html>
